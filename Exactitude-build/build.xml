@@ -1,0 +1,154 @@
+<project name="Exactitude" default="dist" basedir=".">
+   <description>Build the complete set of Exactitude libraries</description>
+
+   <!-- set global properties for this build -->
+   <property name="VERSION"      value="0.2"/>
+   <property name="PHASHVERSION" value="0.9.4"/>
+   <property name="build"        location="build"/>
+   <property name="coredir"      location="../Exactitude-core"/>
+   <property name="impldir"      location="../Exactitude-impl"/>
+   <property name="phashdir"     location="../Exactitude-pHash"/>
+   <property name="builddir"     location="../Exactitude-build"/>
+   <property name="dependencies" location="../Exactitude-Dependencies"/>
+   <property name="testdir"      location="../Exactitude-test"/>
+
+   <target name="init">
+      <!-- Create the time stamp -->
+      <tstamp />
+      <!-- Create directories -->
+      <mkdir dir="${build}"/>
+      <mkdir dir="${coredir}/build"/>
+      <mkdir dir="${coredir}/build/dist"/>
+      <mkdir dir="${coredir}/build/javadoc"/>
+      <mkdir dir="${impldir}/build"/>
+      <mkdir dir="${impldir}/build/dist"/>
+      <mkdir dir="${impldir}/build/javadoc"/>
+      <mkdir dir="${phashdir}/build"/>
+      <mkdir dir="${phashdir}/build/dist"/>
+      <mkdir dir="${phashdir}/build/javadoc"/>
+      <mkdir dir="${testdir}/build"/>
+      <mkdir dir="${testdir}/dist"/>
+   </target>
+
+   <!-- Compile java files -->
+   <target name="compile" depends="init" description="Compile the source" >
+      <!-- Exactitude-core -->
+      <javac includeAntRuntime='false' srcdir="${coredir}/src" destdir="${coredir}/build" debug="true"/>
+      <javac includeAntRuntime='false' srcdir="${basedir}/src" destdir="${coredir}/build" debug="true"/>
+      <jar jarfile="${coredir}/build/dist/Exactitude-core-${VERSION}.jar" basedir="${coredir}/build" includes="exactitude/**" manifest="${basedir}/prebuilt/Manifest"/>
+
+      <!-- Exactitude-pHash -->
+      <javac includeAntRuntime='false'  sourcepath="" srcdir="${phashdir}/src" destdir="${phashdir}/build"  debug="true">
+         <include name="exactitude/**"/>
+         <classpath>
+            <pathelement location="${coredir}/build/dist/Exactitude-core-${VERSION}.jar"/>
+            <pathelement location="${build}/lib/pHash-${PHASHVERSION}.jar"/>
+         </classpath>
+      </javac>
+      <jar jarfile="${phashdir}/build/dist/Exactitude-pHash-${VERSION}.jar" basedir="${phashdir}/build" includes="exactitude/**" excludes="org/pHash/**"/>
+
+      <!-- Exactitude-impl -->
+      <javac includeAntRuntime='false' srcdir="${impldir}/src" destdir="${impldir}/build" debug="true">
+         <classpath>
+            <pathelement location="${coredir}/build/dist/Exactitude-core-${VERSION}.jar"/>
+            <pathelement location="${phashdir}/build/dist/Exactitude-pHash-${VERSION}.jar"/>
+            <pathelement location="${build}/lib/pHash-${PHASHVERSION}.jar"/>
+         </classpath>
+      </javac>
+      <jar jarfile="${impldir}/build/dist/Exactitude-impl-${VERSION}.jar" basedir="${impldir}/build" includes="exactitude/**" manifest="${basedir}/prebuilt/Manifest"/>
+
+      <!-- Exactitude-test -->
+      <javac includeAntRuntime='false' srcdir="${testdir}/src" destdir="${testdir}/build" debug="true">
+         <classpath>
+            <pathelement location="${impldir}/build/dist/Exactitude-impl-${VERSION}.jar"/>
+            <pathelement location="${coredir}/build/dist/Exactitude-core-${VERSION}.jar"/>
+            <pathelement location="${phashdir}/build/dist/Exactitude-pHash-${VERSION}.jar"/>
+            <pathelement location="${build}/lib/pHash-${PHASHVERSION}.jar"/>
+         </classpath>
+      </javac>
+      <jar jarfile="${testdir}/build/dist/Exactitude-test-${VERSION}.jar" basedir="${testdir}/build" includes="exactitude/**" manifest="${testdir}/manifest.txt"/>
+   </target>
+
+   <!-- Create javadoc -->
+   <target name="javadoc" depends="compile" description="Generate javadoc" >
+      <!-- Exactitude JavaDoc -->
+     <javadoc sourcepath="${coredir}/src" destdir="${coredir}/build/javadoc">
+         <packageset dir="${coredir}/src" defaultexcludes="yes">
+            <include name="exactitude/**"/>
+         </packageset>
+         <packageset dir="${impldir}/src" defaultexcludes="yes">
+            <include name="exactitude/**"/>
+         </packageset>
+         <packageset dir="${phashdir}/src" defaultexcludes="yes">
+            <include name="exactitude/**"/>
+            <exclude name="org/pHash/**"/>
+         </packageset>
+         <classpath>
+            <pathelement location="${coredir}/build/dist/Exactitude-core-${VERSION}.jar"/>
+            <pathelement location="${phashdir}/build/dist/Exactitude-pHash-${VERSION}.jar"/>
+            <pathelement location="${build}/lib/pHash-${PHASHVERSION}.jar"/>
+         </classpath>
+      </javadoc>
+      <jar jarfile="${coredir}/build/dist/Exactitude-javadoc-${VERSION}.jar" basedir="${coredir}/build/javadoc"/>
+
+   </target>
+
+   <!-- Copy all the jar files to the target area -->
+   <target name="dist" depends="javadoc" description="Gather all the jar files together">
+      <copy todir="${build}/lib">
+         <fileset dir="${coredir}/build/dist">
+            <include name="*.jar"/>
+         </fileset>
+        <fileset dir="prebuilt">
+           <include name="**/*"/>
+        </fileset>
+         <fileset dir="${impldir}/build/dist">
+            <include name="*.jar"/>
+         </fileset>
+         <fileset dir="${phashdir}/build/dist">
+            <include name="*.jar"/>
+         </fileset>
+         <fileset dir="${testdir}/build/dist">
+            <include name="*.jar"/>
+         </fileset>
+      </copy>
+   </target>
+
+   <!-- Execute tests -->
+   <target name="runtests" depends="dist" description="execute the tests">
+      <!-- <java jar="${build}/lib/Exactitude-test-${VERSION}.jar" fork="true" dir="${build}/lib"> -->
+      <java dir="${build}/lib" fork="true" jar="${build}/lib/Exactitude-test-${VERSION}.jar">
+         <arg line="-f jpg -t png -i ${testdir}/testData/filea.jpg -o ${testdir}/testData/filea.png"/>
+         <jvmarg value="-Djava.library.path=${build}/lib"/>
+         <classpath>
+            <pathelement location="${builddir}/build/lib/jai-1_1_3/lib/"/>
+            <pathelement location="${builddir}/build/lib/"/>
+         </classpath>
+      </java>
+   </target>
+
+
+
+   <!-- Delete the output directories - watch for the order of deletion! -->
+   <target name="clean" description="Clean up" >
+      <delete quiet="true">
+         <fileset dir="${build}" includes="*.jar"/>
+         <fileset dir="${build}" includes="Manifest"/>
+         <fileset dir="${build}" includes="*.xml"/>
+      </delete>
+      <delete quiet="true" dir="bin.exactitude" />
+      <delete quiet="true" dir="${coredir}/build/javadoc"/>
+      <delete quiet="true" dir="${coredir}/build/dist"/>
+      <delete quiet="true" dir="${coredir}/build"/>
+      <delete quiet="true" dir="${impldir}/build/javadoc"/>
+      <delete quiet="true" dir="${impldir}/build/dist"/>
+      <delete quiet="true" dir="${impldir}/build"/>
+      <delete quiet="true" dir="${phashdir}/build/javadoc"/>
+      <delete quiet="true" dir="${phashdir}/build/dist"/>
+      <delete quiet="true" dir="${phashdir}/build"/>
+      <delete quiet="true" dir="${testdir}/build/dist"/>
+      <delete quiet="true" dir="${testdir}/build"/>
+   </target>
+
+</project>
+

@@ -1,0 +1,67 @@
+<project name="Exactitude-test" default="dist" basedir=".">
+   <description>Build and run the Exactitude tests</description>
+
+   <!-- set global properties for this build -->
+   <property name="VERSION"      value="0.2"/>
+   <property name="PHASHVERSION" value="0.9.4"/>
+   <property name="builddir"     location="../Exactitude-build"/>
+   <property name="coredir"      location="../Exactitude-core"/>
+   <property name="impldir"      location="../Exactitude-impl"/>
+   <property name="phashdir"     location="../Exactitude-pHash"/>
+   <property name="dependencies" location="../Exactitude-Dependencies"/>
+   <property name="testdir"      location="../Exactitude-test"/>
+
+   <property name="projName" location="Exactitude-test"/>
+   <property name="src"      location="${basedir}/src"/>
+   <property name="build"    location="${basedir}/build"/>
+   <property name="dist"     location="${build}/dist"/>
+
+
+   <target name="init" depends="clean">
+      <!-- Create the time stamp -->
+      <tstamp />
+      <!-- Create directories -->
+      <mkdir dir="${build}"/>
+      <mkdir dir="${dist}"/>
+   </target>
+
+   <!-- Compile java files -->
+   <target name="compile" depends="init" description="Compile the source" >
+      <javac includeAntRuntime='false' srcdir="${src}" destdir="${build}">
+         <classpath>
+            <pathelement location="${impldir}/build/dist/Exactitude-impl-${VERSION}.jar"/>
+            <pathelement location="${coredir}/build/dist/Exactitude-core-${VERSION}.jar"/>
+            <pathelement location="${phashdir}/build/dist/Exactitude-pHash-${VERSION}.jar"/>
+            <pathelement location="${dependencies}/lib/pHash-${PHASHVERSION}.jar"/>
+         </classpath>
+      </javac>
+   </target>
+
+   <!-- Create jars in distribution -->
+   <target name="dist" depends="compile" description="Generate the installable stuff" >
+      <jar jarfile="${dist}/Exactitude-test-${VERSION}.jar" basedir="${build}" includes="exactitude/**" manifest="${basedir}/manifest.txt"/>
+   </target>
+
+   <!-- Execute tests -->
+   <target name="runtests" depends="dist" description="execute the tests">
+      <java jar="${dist}/Exactitude-test-${VERSION}.jar" fork="true">
+         <arg line="-f jpg -t png -i ${testdir}/testData/filea.jpg -o ${testdir}/testData/filea.png"/>
+         <jvmarg value="-Djava.library.path={builddir}/build/lib"/>
+         <classpath>
+            <pathelement location="${builddir}build//lib/jai-1_1_3/lib/"/>
+            <pathelement location="${builddir}/build/lib/"/>
+            <pathelement location="${impldir}/build/dist/Exactitude-impl-${VERSION}.jar"/>
+            <pathelement location="${coredir}/build/dist/Exactitude-core-${VERSION}.jar"/>
+            <pathelement location="${phashdir}/build/dist/Exactitude-pHash-${VERSION}.jar"/>
+         </classpath>
+      </java>
+   </target>
+
+
+   <!-- Delete the output directories - watch for the order of deletion! -->
+   <target name="clean" description="Clean up" >
+      <delete quiet="true" dir="${build}"/>
+   </target>
+
+</project>
+

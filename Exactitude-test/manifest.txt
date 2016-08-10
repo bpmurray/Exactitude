@@ -1,0 +1,2 @@
+Main-Class: exactitude.ExactitudeRun
+Class-Path: Exactitude-core-0.2.jar Exactitude-impl-0.2.jar Exactitude-pHash-0.2.jar

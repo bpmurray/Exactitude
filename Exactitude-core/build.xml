@@ -1,0 +1,51 @@
+<project name="Exactitude-core" default="dist" basedir=".">
+   <description>Build the base Exactitude-Core library</description>
+
+   <!-- set global properties for this build -->
+   <property name="VERSION"      value="0.2"/>
+   <property name="PHASHVERSION" value="0.9.4"/>
+   <property name="coredir"      location="../Exactitude-core"/>
+   <property name="impldir"      location="../Exactitude-impl"/>
+   <property name="phashdir"     location="../Exactitude-pHash"/>
+   <property name="dependencies" location="../Exactitude-Dependencies"/>
+
+   <property name="projName" location="Exactitude-core"/>
+   <property name="src"      location="${basedir}/src"/>
+   <property name="build"    location="${basedir}/build"/>
+   <property name="dist"     location="${build}/dist"/>
+   <property name="javadoc"  location="${build}/javadoc"/>
+
+   <target name="init" depends="clean">
+      <!-- Create the time stamp -->
+      <tstamp />
+      <!-- Create directories -->
+      <mkdir dir="${build}"/>
+      <mkdir dir="${dist}"/>
+      <mkdir dir="${javadoc}"/>
+   </target>
+
+   <!-- Compile java files -->
+   <target name="compile" depends="init" description="Compile the source" >
+      <javac includeAntRuntime='false' srcdir="${src}" destdir="${build}" debug="true"/>
+   </target>
+
+   <!-- Create javadoc -->
+   <target name="javadoc" depends="compile" description="Generate javadoc" >
+      <javadoc sourcepath="${src}" destdir="${javadoc}"/>
+   </target>
+
+   <!-- Create jars in distribution -->
+   <target name="dist" depends="javadoc" description="Generate the installable stuff" >
+      <jar jarfile="${dist}/Exactitude-core-${VERSION}.jar" basedir="${build}" includes="exactitude/**" manifest="${basedir}/manifest.txt"/>
+      <jar jarfile="${dist}/Exactitude-core-javadoc-${VERSION}.jar" basedir="${javadoc}"/>
+   </target>
+
+   <!-- Delete the output directories - watch for the order of deletion! -->
+   <target name="clean" description="Clean up" >
+      <delete quiet="true" dir="${javadoc}"/>
+      <delete quiet="true" dir="${dist}"/>
+      <delete quiet="true" dir="${build}"/>
+   </target>
+
+</project>
+

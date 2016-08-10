@@ -1,0 +1,66 @@
+<project name="pHash" default="javadoc" basedir=".">
+   <description>Build the base Exactitude-pHash library</description>
+
+   <!-- set global properties for this build -->
+   <property name="VERSION"      value="0.2"/>
+   <property name="PHASHVERSION" value="0.9.4"/>
+   <property name="coredir"      location="../Exactitude-core"/>
+   <property name="impldir"      location="../Exactitude-impl"/>
+   <property name="phashdir"     location="../Exactitude-pHash"/>
+   <property name="builddir"     location="../Exactitude-build/build"/>
+   <property name="dependencies" location="../Exactitude-Dependencies"/>
+
+   <property name="projName" location="Exactitude-pHash"/>
+   <property name="src"      location="${basedir}/src"/>
+   <property name="build"    location="${basedir}/build"/>
+   <property name="dist"     location="${build}/dist"/>
+   <property name="javadoc"  location="${build}/javadoc"/>
+   <property name="coredir"  location="${basedir}/../Exactitude-core"/>
+
+   <target name="init" depends="clean">
+      <!-- Create the time stamp -->
+      <tstamp />
+      <!-- Create directories -->
+      <mkdir dir="${build}"/>
+      <mkdir dir="${dist}"/>
+      <mkdir dir="${javadoc}"/>
+      <mkdir dir="${javadoc}/exactitude"/>
+   </target>
+
+   <!-- Create java jars in distribution -->
+   <target name="javabuild" depends="init" description="Pack up the java jars" >
+      <javac includeAntRuntime='false'  sourcepath="" srcdir="${src}" destdir="${build}"  debug="true">
+         <include name="exactitude/comparator/**"/>
+         <classpath>
+            <pathelement location="${coredir}/build/dist/Exactitude-core-${VERSION}.jar"/>
+            <pathelement location="${builddir}/lib/pHash-${PHASHVERSION}.jar"/>
+         </classpath>
+      </javac>
+      <jar jarfile="${dist}/Exactitude-pHash-${VERSION}.jar" basedir="${build}" includes="exactitude/**"/>
+   </target>
+
+
+   <!-- Create javadoc -->
+   <target name="javadoc" depends="javabuild" description="Generate javadoc" >
+      <javadoc destdir="${javadoc}/exactitude">
+         <classpath>
+            <pathelement location="${coredir}/build/dist/Exactitude-core-${VERSION}.jar"/>
+            <pathelement location="${builddir}/lib/pHash-${PHASHVERSION}.jar"/>
+         </classpath>
+         <packageset dir="${src}" defaultexcludes="yes">
+            <include name="exactitude/comparator/**"/>
+         </packageset>
+      </javadoc>
+      <jar jarfile="${dist}/Exactitude-pHash-javadoc-${VERSION}.jar" basedir="${javadoc}/fishywiki"/>
+   </target>
+
+
+   <!-- Delete the output directories - watch for the order of deletion! -->
+   <target name="clean" description="Clean up" >
+      <delete quiet="true" dir="${javadoc}"/>
+      <delete quiet="true" dir="${dist}"/>
+      <delete quiet="true" dir="${build}"/>
+   </target>
+
+</project>
+

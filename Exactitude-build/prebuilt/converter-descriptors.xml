@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<!--=====================================================-->
+	<!-- Logging information - the default is ERROR          -->
+	<!--=====================================================-->
+	<logging level="ALL" />
+
+	<!--
+		This file describes the configuration for the various elements. It
+		contains three sections: 1. The filetypes section. This simply lists
+		the file formats we know about. Its function is really to provide some
+		description to allow this to be maintained easily. 2. The converters
+		list. 3. The comparators list.
+	-->
+
+	<!--=====================================================-->
+	<!-- The file types - the shortname should be lowercase! -->
+	<!--=====================================================-->
+	<filetypes>
+		<type>
+			<name>JPEG</name>
+			<description>JPEG/EXIF 2.0 files</description>
+			<class>com.sun.imageio.plugins.jpeg.JPEGImageReader
+			</class>
+			<shortname>jpg</shortname>
+		</type>
+		<type>
+			<name>PNG</name>
+			<description>Portable Network Graphic</description>
+			<class>com.sun.imageio.plugins.png.PNGImageReader
+			</class>
+			<shortname>png</shortname>
+		</type>
+		<type>
+			<name>BMP</name>
+			<description>MS Windows Bitmapped Graphic</description>
+			<class>com.sun.imageio.plugins.bmp.BMPImageReader
+			</class>
+			<shortname>bmp</shortname>
+		</type>
+		<type>
+			<name>WBMP</name>
+			<description>Wireless Bitmapped Graphic</description>
+			<class>com.sun.imageio.plugins.wbmp.WBMPImageReader
+			</class>
+			<shortname>wbmp</shortname>
+		</type>
+		<!-- Types from JAI extensions -->
+		<type>
+			<name>RAW</name>
+			<description>Raw Image</description>
+			<class>com.sun.media.imageioimpl.plugins.raw.RawImageReader
+			</class>
+			<shortname>raw</shortname>
+		</type>
+		<type>
+			<name>TIFF</name>
+			<description>Tagged image file format</description>
+			<class>com.sun.media.imageioimpl.plugins.tiff.TIFFImageReader
+			</class>
+			<shortname>tif</shortname>
+		</type>
+		<type>
+			<name>JPEG-LS</name>
+			<description>Lossless JPEG</description>
+			<class>com.sun.media.imageioimpl.plugins.jpeg.CLibJPEGImageReader
+			</class>
+			<shortname>jfif</shortname>
+		</type>
+		<type>
+			<name>PNM</name>
+			<description>Portable anymap graphic bitmap image</description>
+			<class>com.sun.media.imageioimpl.plugins.pnm.PNMImageReader
+			</class>
+			<shortname>pnm</shortname>
+		</type>
+		<type>
+			<name>RAW</name>
+			<description>Raw Image</description>
+			<class>com.sun.media.imageioimpl.plugins.raw.RawImageReader
+			</class>
+			<shortname>raw</shortname>
+		</type>
+		<type>
+			<name>JPEG2000</name>
+			<description>JPEG 2000</description>
+			<class>com.sun.media.imageioimpl.plugins.jpeg2000.J2KImageReader
+			</class>
+			<shortname>jpeg2000</shortname>
+		</type>
+
+<!-- Duplicates from JAI 
+		<type>
+			<name>PNG</name>
+			<description>Portable Network Graphic</description>
+			<class>com.sun.media.imageioimpl.plugins.png.CLibPNGImageReader</class>
+			<shortname>png</shortname>
+		</type>
+		<type>
+			<name>BMP</name>
+			<description>MS Windows Bitmapped Graphic</description>
+			<class>com.sun.media.imageioimpl.plugins.bmp.BMPImageReader</class>
+			<shortname>bmp</shortname>
+		</type>
+		<type>
+			<name>WBMP</name>
+			<description>Wireless Bitmapped Graphic</description>
+			<class>com.sun.media.imageioimpl.plugins.wbmp.WBMPImageReader</class>
+			<shortname>wbmp</shortname>
+		</type>
+-->
+	</filetypes>
+
+	<!--=======================================================================-->
+	<!-- The list of converters - these convert files from the "from" to "to". -->
+	<!--=======================================================================-->
+	<converterlist>
+		<description>This is the list of implemented converters</description>
+		<converter>
+			<name>ImageIOJPEGtoTIFFConverter</name>
+			<description>This is based on the java ImageIO pluggable converter</description>
+			<shortname>imageio</shortname>
+			<fromlist>
+				<from>jpg</from>
+				<from>JPEG</from>
+			</fromlist>
+			<tolist>
+				<to>tif</to>
+				<to>TIFF</to>
+			</tolist>
+			<class>exactitude.impl.converter.ImageIOJPEGtoTIFFConverter</class>
+			<metadataconverter>exactitude.impl.converter.MetaJPGtoTIF</metadataconverter>
+			<format>graphic</format>
+		</converter>
+		<converter>
+			<name>ImageIOTIFFtoJPEGConverter</name>
+			<description>This is based on the java ImageIO pluggable converter</description>
+			<shortname>imageio</shortname>
+			<fromlist>
+				<from>tif</from>
+				<from>TIF</from>
+			</fromlist>
+			<tolist>
+				<to>jpg</to>
+				<to>JPG</to>
+			</tolist>
+			<class>exactitude.impl.converter.ImageIOTIFFtoJPEGConverter</class>
+			<metadataconverter>exactitude.impl.converter.MetaTIFtoJPG</metadataconverter>
+			<format>graphic</format>
+		</converter>
+		<converter>
+			<name>ImageIOConverter</name>
+			<description>Conversion from JPEG or TIFF to PNG</description>
+			<shortname>imageio</shortname>
+			<fromlist>
+				<from>jpg</from>
+				<from>tif</from>
+			</fromlist>
+			<tolist>
+				<to>png</to>
+			</tolist>
+			<class>exactitude.impl.converter.ImageIOConverter</class>
+			<metadataconverter>exactitude.impl.converter.MetaSimple</metadataconverter>
+			<format>graphic</format>
+		</converter>
+		<converter>
+			<name>ImageIOConverter</name>
+			<description>Conversion from PNG to JPEG or TIFF</description>
+			<shortname>imageio</shortname>
+			<fromlist>
+				<from>png</from>
+			</fromlist>
+			<tolist>
+				<to>jpg</to>
+				<to>tif</to>
+			</tolist>
+			<class>exactitude.impl.converter.ImageIOConverter</class>
+			<metadataconverter>exactitude.impl.converter.MetaSimple</metadataconverter>
+			<format>graphic</format>
+		</converter>
+		
+		<!-- Identity converters -->
+		<converter>
+			<name>ImageIOConverter</name>
+			<description>Identity conversion TIF->TIF</description>
+			<shortname>imageio</shortname>
+			<fromlist>
+				<from>TIF</from>
+				<from>tif</from>
+			</fromlist>
+			<tolist>
+				<to>TIF</to>
+				<to>tif</to>
+			</tolist>
+			<class>exactitude.impl.converter.ImageIOConverter</class>
+			<metadataconverter>exactitude.impl.converter.MetaSimple</metadataconverter>
+			<format>graphic</format>
+		</converter>
+		<converter>
+			<name>ImageIOConverter</name>
+			<description>Identity conversion JPEG->JPEG</description>
+			<shortname>imageio</shortname>
+			<fromlist>
+				<from>JPG</from>
+				<from>jpg</from>
+			</fromlist>
+			<tolist>
+				<to>JPG</to>
+				<to>jpg</to>
+			</tolist>
+			<class>exactitude.impl.converter.ImageIOConverter</class>
+			<metadataconverter>exactitude.impl.converter.MetaSimple</metadataconverter>
+			<format>graphic</format>
+		</converter>
+	</converterlist>
+	<!--==========================================================================-->
+	<!-- The comparator list - these compare the converted and the original files -->
+	<!--==========================================================================-->
+	<comparatorlist>
+		<comparator>
+			<name>Comparison of metadata</name>
+			<description>This is used to compare the metadata of the images</description>
+			<format>graphic</format>
+			<class>exactitude.impl.comparator.ImageIOMetadataComparator</class>
+			<arguments></arguments>
+		</comparator>
+		<comparator>
+			<name>Perceptual hash image comparison using Marr Wavelets</name>
+			<description>This is used to provide a comparison of the objects</description>
+			<format>graphic</format>
+			<class>exactitude.comparator.pHash.PHashMHImage</class>
+			<arguments></arguments>
+		</comparator>
+		<!--  Extra comparison using DCT -->
+		<comparator>
+			<name>Perceptual hash DCT image comparison</name>
+			<description></description>
+			<format>graphic</format>
+			<class>exactitude.comparator.pHash.PHashDCTImage</class>
+			<arguments></arguments>
+		</comparator>
+		<comparator>
+			<name>Perceptual hash video comparison</name>
+			<description></description>
+			<format>video</format>
+			<class>exactitude.comparator.pHash.PHashVideo</class>
+			<arguments></arguments>
+		</comparator>
+		<comparator>
+			<name>Perceptual hash text comparison</name>
+			<description></description>
+			<format>text</format>
+			<class>exactitude.comparator.pHash.PHashText</class>
+			<arguments></arguments>
+		</comparator>
+		<comparator>
+			<name>Perceptual hash audio comparison</name>
+			<description></description>
+			<format>audio</format>
+			<class>exactitude.comparator.pHash.PHashAudio</class>
+			<arguments></arguments>
+		</comparator>
+	</comparatorlist>
+
+</config>

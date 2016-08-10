@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.2/Umlnotation" xmi:id="_oShTkHxAEd-fHOfjvvHXPA" type="Class" name="exactitude-api.dnx">
+  <eAnnotations xmi:id="_oSh6oHxAEd-fHOfjvvHXPA" source="com.ibm.xtools.common.ui.reduction.editingCapabilities">
+    <details xmi:id="_oSh6oXxAEd-fHOfjvvHXPA" key="com.ibm.xtools.activities.javaVisualizerActivity" value="1"/>
+  </eAnnotations>
+  <children xmi:id="_OyNvYKZAEd-J6qh_PEcH1Q">
+    <children xmi:id="_OyOWcKZAEd-J6qh_PEcH1Q" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_OyOWcaZAEd-J6qh_PEcH1Q" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_OyOWcqZAEd-J6qh_PEcH1Q" type="Stereotype"/>
+    <children xmi:id="_OyO9gKZAEd-J6qh_PEcH1Q" type="Name"/>
+    <children xmi:id="_OyO9gaZAEd-J6qh_PEcH1Q" type="Parent"/>
+    <children xmi:id="_OyO9gqZAEd-J6qh_PEcH1Q" visible="false" type="ANNOTATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_OyO9g6ZAEd-J6qh_PEcH1Q"/>
+    </children>
+    <children xmi:id="_OyPkkKZAEd-J6qh_PEcH1Q" type="ANNOTATED_ATTRIBUTE_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_OyPkkaZAEd-J6qh_PEcH1Q"/>
+    </children>
+    <children xmi:id="_OyQLoKZAEd-J6qh_PEcH1Q" type="ANNOTATED_OPERATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_OyQLoaZAEd-J6qh_PEcH1Q"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_OyNvYaZAEd-J6qh_PEcH1Q" fontName="Sans" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=IComparator%5Bjcu%5Ename=IComparator.java%5Bjpack%5Ename=exactitude.core.comparator%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=Exactitude-core%5D%5D%5D%5D$uml.Class"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OyNvYqZAEd-J6qh_PEcH1Q" x="29792" y="22344"/>
+  </children>
+  <children xmi:id="_OyQLoqZAEd-J6qh_PEcH1Q">
+    <children xmi:id="_OySA0KZAEd-J6qh_PEcH1Q" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_OySA0aZAEd-J6qh_PEcH1Q" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_OySn4KZAEd-J6qh_PEcH1Q" type="Stereotype"/>
+    <children xmi:id="_OySn4aZAEd-J6qh_PEcH1Q" type="Name"/>
+    <children xmi:id="_OyTO8KZAEd-J6qh_PEcH1Q" type="Parent"/>
+    <children xmi:id="_OyTO8aZAEd-J6qh_PEcH1Q" visible="false" type="ANNOTATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_OyTO8qZAEd-J6qh_PEcH1Q"/>
+    </children>
+    <children xmi:id="_OyT2AKZAEd-J6qh_PEcH1Q" type="ANNOTATED_ATTRIBUTE_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_OyT2AaZAEd-J6qh_PEcH1Q"/>
+    </children>
+    <children xmi:id="_OyT2AqZAEd-J6qh_PEcH1Q" type="ANNOTATED_OPERATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_OyT2A6ZAEd-J6qh_PEcH1Q"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_OyQLo6ZAEd-J6qh_PEcH1Q" fontName="Sans" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=Constants%5Bjcu%5Ename=Constants.java%5Bjpack%5Ename=exactitude.core%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=Exactitude-core%5D%5D%5D%5D$uml.Class"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OyQLpKZAEd-J6qh_PEcH1Q" x="798" y="32186"/>
+  </children>
+  <children xmi:id="_OyT2BKZAEd-J6qh_PEcH1Q">
+    <children xmi:id="_OyUdEKZAEd-J6qh_PEcH1Q" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_OyUdEaZAEd-J6qh_PEcH1Q" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_OyVEIKZAEd-J6qh_PEcH1Q" type="Stereotype"/>
+    <children xmi:id="_OyVEIaZAEd-J6qh_PEcH1Q" type="Name"/>
+    <children xmi:id="_OyVrMKZAEd-J6qh_PEcH1Q" type="Parent"/>
+    <children xmi:id="_OyVrMaZAEd-J6qh_PEcH1Q" visible="false" type="ANNOTATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_OyVrMqZAEd-J6qh_PEcH1Q"/>
+    </children>
+    <children xmi:id="_OyVrM6ZAEd-J6qh_PEcH1Q" type="ANNOTATED_ATTRIBUTE_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_OyVrNKZAEd-J6qh_PEcH1Q"/>
+    </children>
+    <children xmi:id="_OyWSQKZAEd-J6qh_PEcH1Q" type="ANNOTATED_OPERATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_OyWSQaZAEd-J6qh_PEcH1Q"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_OyT2BaZAEd-J6qh_PEcH1Q" fontName="Sans" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=ConfigItemDescriptor%5Bjcu%5Ename=ConfigItemDescriptor.java%5Bjpack%5Ename=exactitude.core.Descriptors%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=Exactitude-core%5D%5D%5D%5D$uml.Class"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OyT2BqZAEd-J6qh_PEcH1Q" x="6118" y="22344"/>
+  </children>
+  <children xmi:id="_OyWSQqZAEd-J6qh_PEcH1Q">
+    <children xmi:id="_OyW5UKZAEd-J6qh_PEcH1Q" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_OyW5UaZAEd-J6qh_PEcH1Q" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_OyXgYKZAEd-J6qh_PEcH1Q" type="Stereotype"/>
+    <children xmi:id="_OyXgYaZAEd-J6qh_PEcH1Q" type="Name"/>
+    <children xmi:id="_OyYHcKZAEd-J6qh_PEcH1Q" type="Parent"/>
+    <children xmi:id="_OyYHcaZAEd-J6qh_PEcH1Q" visible="false" type="ANNOTATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_OyYHcqZAEd-J6qh_PEcH1Q"/>
+    </children>
+    <children xmi:id="_OyYHc6ZAEd-J6qh_PEcH1Q" type="ANNOTATED_ATTRIBUTE_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_OyYHdKZAEd-J6qh_PEcH1Q"/>
+    </children>
+    <children xmi:id="_OyYugKZAEd-J6qh_PEcH1Q" type="ANNOTATED_OPERATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_OyYugaZAEd-J6qh_PEcH1Q"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_OyWSQ6ZAEd-J6qh_PEcH1Q" fontName="Sans" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=Exactitude%5Bjcu%5Ename=Exactitude.java%5Bjpack%5Ename=exactitude.core%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=Exactitude-core%5D%5D%5D%5D$uml.Class"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OyWSRKZAEd-J6qh_PEcH1Q" x="13034" y="7847"/>
+  </children>
+  <children xmi:id="_OyZ8oKZAEd-J6qh_PEcH1Q">
+    <children xmi:id="_OybKwKZAEd-J6qh_PEcH1Q" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_OybKwaZAEd-J6qh_PEcH1Q" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_OybKwqZAEd-J6qh_PEcH1Q" type="Stereotype"/>
+    <children xmi:id="_OybKw6ZAEd-J6qh_PEcH1Q" type="Name"/>
+    <children xmi:id="_Oybx0KZAEd-J6qh_PEcH1Q" type="Parent"/>
+    <children xmi:id="_Oybx0aZAEd-J6qh_PEcH1Q" visible="false" type="ANNOTATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_Oybx0qZAEd-J6qh_PEcH1Q"/>
+    </children>
+    <children xmi:id="_OydnAKZAEd-J6qh_PEcH1Q" type="ANNOTATED_ATTRIBUTE_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_OydnAaZAEd-J6qh_PEcH1Q"/>
+    </children>
+    <children xmi:id="_Oye1IKZAEd-J6qh_PEcH1Q" type="ANNOTATED_OPERATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_Oye1IaZAEd-J6qh_PEcH1Q"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_OyZ8oaZAEd-J6qh_PEcH1Q" fontName="Sans" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=DescriptorParser%5Bjcu%5Ename=DescriptorParser.java%5Bjpack%5Ename=exactitude.core.Descriptors%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=Exactitude-core%5D%5D%5D%5D$uml.Class"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OyZ8oqZAEd-J6qh_PEcH1Q" x="1995" y="15827"/>
+  </children>
+  <children xmi:id="_OyfcMKZAEd-J6qh_PEcH1Q">
+    <children xmi:id="_OygDQKZAEd-J6qh_PEcH1Q" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_OygDQaZAEd-J6qh_PEcH1Q" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_OygqUKZAEd-J6qh_PEcH1Q" type="Stereotype"/>
+    <children xmi:id="_OygqUaZAEd-J6qh_PEcH1Q" type="Name"/>
+    <children xmi:id="_OyhRYKZAEd-J6qh_PEcH1Q" type="Parent"/>
+    <children xmi:id="_OyhRYaZAEd-J6qh_PEcH1Q" visible="false" type="ANNOTATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_OyhRYqZAEd-J6qh_PEcH1Q"/>
+    </children>
+    <children xmi:id="_OyhRY6ZAEd-J6qh_PEcH1Q" type="ANNOTATED_ATTRIBUTE_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_OyhRZKZAEd-J6qh_PEcH1Q"/>
+    </children>
+    <children xmi:id="_Oyh4cKZAEd-J6qh_PEcH1Q" type="ANNOTATED_OPERATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_Oyh4caZAEd-J6qh_PEcH1Q"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_OyfcMaZAEd-J6qh_PEcH1Q" fontName="Sans" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=IConverter%5Bjcu%5Ename=IConverter.java%5Bjpack%5Ename=exactitude.core.converter%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=Exactitude-core%5D%5D%5D%5D$uml.Class"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OyfcMqZAEd-J6qh_PEcH1Q" x="18221" y="22344"/>
+  </children>
+  <children xmi:id="_Oyh4cqZAEd-J6qh_PEcH1Q">
+    <children xmi:id="_OyifgKZAEd-J6qh_PEcH1Q" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_OyifgaZAEd-J6qh_PEcH1Q" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_OyjGkKZAEd-J6qh_PEcH1Q" type="Stereotype"/>
+    <children xmi:id="_OyjGkaZAEd-J6qh_PEcH1Q" type="Name"/>
+    <children xmi:id="_OyjtoKZAEd-J6qh_PEcH1Q" type="Parent"/>
+    <children xmi:id="_OyjtoaZAEd-J6qh_PEcH1Q" visible="false" type="ANNOTATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_OyjtoqZAEd-J6qh_PEcH1Q"/>
+    </children>
+    <children xmi:id="_OykUsKZAEd-J6qh_PEcH1Q" type="ANNOTATED_ATTRIBUTE_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_OykUsaZAEd-J6qh_PEcH1Q"/>
+    </children>
+    <children xmi:id="_OykUsqZAEd-J6qh_PEcH1Q" type="ANNOTATED_OPERATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_OykUs6ZAEd-J6qh_PEcH1Q"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_Oyh4c6ZAEd-J6qh_PEcH1Q" fontName="Sans" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=IMetadataConverter%5Bjcu%5Ename=IMetadataConverter.java%5Bjpack%5Ename=exactitude.core.converter%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=Exactitude-core%5D%5D%5D%5D$uml.Class"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Oyh4dKZAEd-J6qh_PEcH1Q" x="25137" y="32186"/>
+  </children>
+  <children xmi:id="_OykUtKZAEd-J6qh_PEcH1Q">
+    <children xmi:id="_Oyk7wKZAEd-J6qh_PEcH1Q" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_Oyk7waZAEd-J6qh_PEcH1Q" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_Oyli0KZAEd-J6qh_PEcH1Q" type="Stereotype"/>
+    <children xmi:id="_OymJ4KZAEd-J6qh_PEcH1Q" type="Name"/>
+    <children xmi:id="_OymJ4aZAEd-J6qh_PEcH1Q" type="Parent"/>
+    <children xmi:id="_OymJ4qZAEd-J6qh_PEcH1Q" visible="false" type="ANNOTATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_OymJ46ZAEd-J6qh_PEcH1Q"/>
+    </children>
+    <children xmi:id="_Oymw8KZAEd-J6qh_PEcH1Q" type="ANNOTATED_ATTRIBUTE_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_Oymw8aZAEd-J6qh_PEcH1Q"/>
+    </children>
+    <children xmi:id="_Oymw8qZAEd-J6qh_PEcH1Q" type="ANNOTATED_OPERATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_Oymw86ZAEd-J6qh_PEcH1Q"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_OykUtaZAEd-J6qh_PEcH1Q" fontName="Sans" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=ProcessManager%5Bjcu%5Ename=ProcessManager.java%5Bjpack%5Ename=exactitude.core.application%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=Exactitude-core%5D%5D%5D%5D$uml.Class"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OykUtqZAEd-J6qh_PEcH1Q" x="17822" y="15827"/>
+  </children>
+  <children xmi:id="_Oymw9KZAEd-J6qh_PEcH1Q">
+    <children xmi:id="_Oyn_EKZAEd-J6qh_PEcH1Q" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_Oyn_EaZAEd-J6qh_PEcH1Q" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_Oyn_EqZAEd-J6qh_PEcH1Q" type="Stereotype"/>
+    <children xmi:id="_Oyn_E6ZAEd-J6qh_PEcH1Q" type="Name"/>
+    <children xmi:id="_OyomIKZAEd-J6qh_PEcH1Q" type="Parent"/>
+    <children xmi:id="_OyomIaZAEd-J6qh_PEcH1Q" visible="false" type="ANNOTATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_OyomIqZAEd-J6qh_PEcH1Q"/>
+    </children>
+    <children xmi:id="_OypNMKZAEd-J6qh_PEcH1Q" type="ANNOTATED_ATTRIBUTE_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_OypNMaZAEd-J6qh_PEcH1Q"/>
+    </children>
+    <children xmi:id="_OypNMqZAEd-J6qh_PEcH1Q" type="ANNOTATED_OPERATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_OypNM6ZAEd-J6qh_PEcH1Q"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_OynYAKZAEd-J6qh_PEcH1Q" fontName="Sans" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=ProcessManagerFactory%5Bjcu%5Ename=ProcessManagerFactory.java%5Bjpack%5Ename=exactitude.core.application%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=Exactitude-core%5D%5D%5D%5D$uml.Class"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OynYAaZAEd-J6qh_PEcH1Q" x="8113" y="12369"/>
+  </children>
+  <children xmi:id="_OypNNKZAEd-J6qh_PEcH1Q">
+    <children xmi:id="_OyqbUKZAEd-J6qh_PEcH1Q" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_OyqbUaZAEd-J6qh_PEcH1Q" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_OyqbUqZAEd-J6qh_PEcH1Q" type="Stereotype"/>
+    <children xmi:id="_OyqbU6ZAEd-J6qh_PEcH1Q" type="Name"/>
+    <children xmi:id="_OyrCYKZAEd-J6qh_PEcH1Q" type="Parent"/>
+    <children xmi:id="_OyrCYaZAEd-J6qh_PEcH1Q" visible="false" type="ANNOTATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_OyrCYqZAEd-J6qh_PEcH1Q"/>
+    </children>
+    <children xmi:id="_OyrpcKZAEd-J6qh_PEcH1Q" type="ANNOTATED_ATTRIBUTE_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_OyrpcaZAEd-J6qh_PEcH1Q"/>
+    </children>
+    <children xmi:id="_OyrpcqZAEd-J6qh_PEcH1Q" type="ANNOTATED_OPERATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_Oyrpc6ZAEd-J6qh_PEcH1Q"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_OypNNaZAEd-J6qh_PEcH1Q" fontName="Sans" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=LogUtil%5Bjcu%5Ename=LogUtil.java%5Bjpack%5Ename=exactitude.core.util%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=Exactitude-core%5D%5D%5D%5D$uml.Class"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Oyp0QKZAEd-J6qh_PEcH1Q" x="12901" y="22344"/>
+  </children>
+  <children xmi:id="_QMxo4KZAEd-J6qh_PEcH1Q">
+    <children xmi:id="_QMyP8KZAEd-J6qh_PEcH1Q" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_QMyP8aZAEd-J6qh_PEcH1Q" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_QMzeEKZAEd-J6qh_PEcH1Q" type="Stereotype"/>
+    <children xmi:id="_QMzeEaZAEd-J6qh_PEcH1Q" type="Name"/>
+    <children xmi:id="_QM0FIKZAEd-J6qh_PEcH1Q" type="Parent"/>
+    <children xmi:id="_QM0FIaZAEd-J6qh_PEcH1Q" visible="false" type="ANNOTATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_QM0FIqZAEd-J6qh_PEcH1Q"/>
+    </children>
+    <children xmi:id="_QM4WkKZAEd-J6qh_PEcH1Q" type="ANNOTATED_ATTRIBUTE_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_QM49oKZAEd-J6qh_PEcH1Q"/>
+    </children>
+    <children xmi:id="_QM49oaZAEd-J6qh_PEcH1Q" type="ANNOTATED_OPERATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_QM49oqZAEd-J6qh_PEcH1Q"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_QMxo4aZAEd-J6qh_PEcH1Q" fontName="Sans" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=ExactitudeRun%5Bjcu%5Ename=ExactitudeRun.java%5Bjpack%5Ename=exactitude%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=Exactitude%5D%5D%5D%5D$uml.Class"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QMxo4qZAEd-J6qh_PEcH1Q" x="13167" y="798"/>
+  </children>
+  <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_oShTkXxAEd-fHOfjvvHXPA"/>
+  <element xsi:nil="true"/>
+  <edges xmi:id="_O5bKoKZAEd-J6qh_PEcH1Q" source="_OyWSQqZAEd-J6qh_PEcH1Q" target="_Oymw9KZAEd-J6qh_PEcH1Q">
+    <children xmi:id="_O5bxsKZAEd-J6qh_PEcH1Q" type="KindLabel">
+      <children xmi:id="_O5cYwaZAEd-J6qh_PEcH1Q" type="Stereotype"/>
+      <children xmi:id="_O5c_0aZAEd-J6qh_PEcH1Q" type="Kind"/>
+      <children xmi:id="_O5c_0KZAEd-J6qh_PEcH1Q" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_O5cYwKZAEd-J6qh_PEcH1Q" y="-188"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_O5bKoaZAEd-J6qh_PEcH1Q" fontName="Sans" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=Exactitude%5Bjcu%5Ename=Exactitude.java%5Bjpack%5Ename=exactitude.core%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=Exactitude-core%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=ProcessManagerFactory%5Bjcu%5Ename=ProcessManagerFactory.java%5Bjpack%5Ename=exactitude.core.application%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=Exactitude-core%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_O5bKoqZAEd-J6qh_PEcH1Q" points="[1, 0, 4035, -1604]$[-4034, 1604, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_O_TJIKZAEd-J6qh_PEcH1Q" id="(0.33320537,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_O_TJIaZAEd-J6qh_PEcH1Q" id="(0.5,0.0)"/>
+  </edges>
+  <edges xmi:id="_O5dm4KZAEd-J6qh_PEcH1Q" source="_OyWSQqZAEd-J6qh_PEcH1Q" target="_OyZ8oKZAEd-J6qh_PEcH1Q">
+    <children xmi:id="_O5e1AKZAEd-J6qh_PEcH1Q" type="KindLabel">
+      <children xmi:id="_O5e1AqZAEd-J6qh_PEcH1Q" type="Stereotype"/>
+      <children xmi:id="_O5fcEaZAEd-J6qh_PEcH1Q" type="Kind"/>
+      <children xmi:id="_O5fcEKZAEd-J6qh_PEcH1Q" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_O5e1AaZAEd-J6qh_PEcH1Q" y="-188"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_O5dm4aZAEd-J6qh_PEcH1Q" fontName="Sans" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=Exactitude%5Bjcu%5Ename=Exactitude.java%5Bjpack%5Ename=exactitude.core%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=Exactitude-core%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=DescriptorParser%5Bjcu%5Ename=DescriptorParser.java%5Bjpack%5Ename=exactitude.core.Descriptors%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=Exactitude-core%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_O5dm4qZAEd-J6qh_PEcH1Q" points="[1, 0, 8071, -5048]$[-8070, 1604, 0, -3444]$[-8070, 5048, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_O_TwMqZAEd-J6qh_PEcH1Q" id="(0.16660269,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_O_UXQKZAEd-J6qh_PEcH1Q" id="(0.6585408,0.0)"/>
+  </edges>
+  <edges xmi:id="_O5gDIKZAEd-J6qh_PEcH1Q" source="_OyWSQqZAEd-J6qh_PEcH1Q" target="_OykUtKZAEd-J6qh_PEcH1Q">
+    <children xmi:id="_O5hRQKZAEd-J6qh_PEcH1Q" type="KindLabel">
+      <children xmi:id="_O5hRQqZAEd-J6qh_PEcH1Q" type="Stereotype"/>
+      <children xmi:id="_O5ifYKZAEd-J6qh_PEcH1Q" type="Kind"/>
+      <children xmi:id="_O5h4UKZAEd-J6qh_PEcH1Q" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_O5hRQaZAEd-J6qh_PEcH1Q" y="-188"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_O5gDIaZAEd-J6qh_PEcH1Q" fontName="Sans" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=Exactitude%5Bjcu%5Ename=Exactitude.java%5Bjpack%5Ename=exactitude.core%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=Exactitude-core%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=ProcessManager%5Bjcu%5Ename=ProcessManager.java%5Bjpack%5Ename=exactitude.core.application%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=Exactitude-core%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_O5gDIqZAEd-J6qh_PEcH1Q" points="[0, 0, -1503, -5048]$[1504, 1604, 1, -3444]$[1504, 5048, 1, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_O_UXQaZAEd-J6qh_PEcH1Q" id="(0.74990404,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_O_UXQqZAEd-J6qh_PEcH1Q" id="(0.0768935,0.0)"/>
+  </edges>
+  <edges xmi:id="_O5ifYaZAEd-J6qh_PEcH1Q" source="_OyWSQqZAEd-J6qh_PEcH1Q" target="_OypNNKZAEd-J6qh_PEcH1Q">
+    <children xmi:id="_O5jtgKZAEd-J6qh_PEcH1Q" type="KindLabel">
+      <children xmi:id="_O5kUkKZAEd-J6qh_PEcH1Q" type="Stereotype"/>
+      <children xmi:id="_O5k7oKZAEd-J6qh_PEcH1Q" type="Kind"/>
+      <children xmi:id="_O5kUkaZAEd-J6qh_PEcH1Q" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_O5jtgaZAEd-J6qh_PEcH1Q" y="-188"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_O5ifYqZAEd-J6qh_PEcH1Q" fontName="Sans" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=Exactitude%5Bjcu%5Ename=Exactitude.java%5Bjpack%5Ename=exactitude.core%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=Exactitude-core%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=LogUtil%5Bjcu%5Ename=LogUtil.java%5Bjpack%5Ename=exactitude.core.util%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=Exactitude-core%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_O5ifY6ZAEd-J6qh_PEcH1Q" points="[0, 0, 0, -11553]$[0, 11553, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_O_TwMKZAEd-J6qh_PEcH1Q" id="(0.5,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_O_TwMaZAEd-J6qh_PEcH1Q" id="(0.751347,0.0)"/>
+  </edges>
+  <edges xmi:id="_O5k7oaZAEd-J6qh_PEcH1Q" source="_OyZ8oKZAEd-J6qh_PEcH1Q" target="_OypNNKZAEd-J6qh_PEcH1Q">
+    <children xmi:id="_O5mJwKZAEd-J6qh_PEcH1Q" type="KindLabel">
+      <children xmi:id="_O5mw0KZAEd-J6qh_PEcH1Q" type="Stereotype"/>
+      <children xmi:id="_O5nX4KZAEd-J6qh_PEcH1Q" type="Kind"/>
+      <children xmi:id="_O5mw0aZAEd-J6qh_PEcH1Q" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_O5mJwaZAEd-J6qh_PEcH1Q" y="-188"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_O5lisKZAEd-J6qh_PEcH1Q" fontName="Sans" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=DescriptorParser%5Bjcu%5Ename=DescriptorParser.java%5Bjpack%5Ename=exactitude.core.Descriptors%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=Exactitude-core%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=LogUtil%5Bjcu%5Ename=LogUtil.java%5Bjpack%5Ename=exactitude.core.util%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=Exactitude-core%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_O5lisaZAEd-J6qh_PEcH1Q" points="[1, 0, -7279, -1604]$[7281, 1604, 1, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_O_RT8KZAEd-J6qh_PEcH1Q" id="(0.77321887,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_O_R7AKZAEd-J6qh_PEcH1Q" id="(0.25026938,0.0)"/>
+  </edges>
+  <edges xmi:id="_O5n-8KZAEd-J6qh_PEcH1Q" source="_OyZ8oKZAEd-J6qh_PEcH1Q" target="_OyT2BKZAEd-J6qh_PEcH1Q">
+    <children xmi:id="_O5omAKZAEd-J6qh_PEcH1Q" type="KindLabel">
+      <children xmi:id="_O5pNEKZAEd-J6qh_PEcH1Q" type="Stereotype"/>
+      <children xmi:id="_O5p0IKZAEd-J6qh_PEcH1Q" type="Kind"/>
+      <children xmi:id="_O5pNEaZAEd-J6qh_PEcH1Q" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_O5omAaZAEd-J6qh_PEcH1Q" y="-188"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_O5n-8aZAEd-J6qh_PEcH1Q" fontName="Sans" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=DescriptorParser%5Bjcu%5Ename=DescriptorParser.java%5Bjpack%5Ename=exactitude.core.Descriptors%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=Exactitude-core%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=ConfigItemDescriptor%5Bjcu%5Ename=ConfigItemDescriptor.java%5Bjpack%5Ename=exactitude.core.Descriptors%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=Exactitude-core%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_O5n-8qZAEd-J6qh_PEcH1Q" points="[1, 0, -2866, -1604]$[2868, 1604, 1, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_O_QF0KZAEd-J6qh_PEcH1Q" id="(0.54643774,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_O_Qs4KZAEd-J6qh_PEcH1Q" id="(0.382404,0.0)"/>
+  </edges>
+  <edges xmi:id="_O5qbMKZAEd-J6qh_PEcH1Q" source="_OyZ8oKZAEd-J6qh_PEcH1Q" target="_OyQLoqZAEd-J6qh_PEcH1Q">
+    <children xmi:id="_O5rCQKZAEd-J6qh_PEcH1Q" type="KindLabel">
+      <children xmi:id="_O5rpUKZAEd-J6qh_PEcH1Q" type="Stereotype"/>
+      <children xmi:id="_O5sQYKZAEd-J6qh_PEcH1Q" type="Kind"/>
+      <children xmi:id="_O5rpUaZAEd-J6qh_PEcH1Q" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_O5rCQaZAEd-J6qh_PEcH1Q" y="-188"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_O5qbMaZAEd-J6qh_PEcH1Q" fontName="Sans" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=DescriptorParser%5Bjcu%5Ename=DescriptorParser.java%5Bjpack%5Ename=exactitude.core.Descriptors%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=Exactitude-core%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=Constants%5Bjcu%5Ename=Constants.java%5Bjpack%5Ename=exactitude.core%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=Exactitude-core%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_O5qbMqZAEd-J6qh_PEcH1Q" points="[1, 0, 0, -11462]$[1, 11462, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_O_U-UKZAEd-J6qh_PEcH1Q" id="(0.31965664,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_O_U-UaZAEd-J6qh_PEcH1Q" id="(0.49991864,0.0)"/>
+  </edges>
+  <edges xmi:id="_O5s3cKZAEd-J6qh_PEcH1Q" source="_OyfcMKZAEd-J6qh_PEcH1Q" target="_Oyh4cqZAEd-J6qh_PEcH1Q">
+    <children xmi:id="_O5tegKZAEd-J6qh_PEcH1Q" type="KindLabel">
+      <children xmi:id="_O5uFkaZAEd-J6qh_PEcH1Q" type="Stereotype"/>
+      <children xmi:id="_O5usoaZAEd-J6qh_PEcH1Q" type="Kind"/>
+      <children xmi:id="_O5usoKZAEd-J6qh_PEcH1Q" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_O5uFkKZAEd-J6qh_PEcH1Q" y="-188"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_O5s3caZAEd-J6qh_PEcH1Q" fontName="Sans" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=IConverter%5Bjcu%5Ename=IConverter.java%5Bjpack%5Ename=exactitude.core.converter%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=Exactitude-core%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=IMetadataConverter%5Bjcu%5Ename=IMetadataConverter.java%5Bjpack%5Ename=exactitude.core.converter%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=Exactitude-core%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_O5s3cqZAEd-J6qh_PEcH1Q" points="[1, 0, -4602, -3520]$[4604, 3520, 1, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_O_R7AaZAEd-J6qh_PEcH1Q" id="(0.49993017,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_O_SiEKZAEd-J6qh_PEcH1Q" id="(0.24973567,0.0)"/>
+  </edges>
+  <edges xmi:id="_O5vTsKZAEd-J6qh_PEcH1Q" source="_OykUtKZAEd-J6qh_PEcH1Q" target="_Oyh4cqZAEd-J6qh_PEcH1Q">
+    <children xmi:id="_O5wh0KZAEd-J6qh_PEcH1Q" type="KindLabel">
+      <children xmi:id="_O5wh0qZAEd-J6qh_PEcH1Q" type="Stereotype"/>
+      <children xmi:id="_O5xI4aZAEd-J6qh_PEcH1Q" type="Kind"/>
+      <children xmi:id="_O5xI4KZAEd-J6qh_PEcH1Q" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_O5wh0aZAEd-J6qh_PEcH1Q" y="-188"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_O5vTsaZAEd-J6qh_PEcH1Q" fontName="Sans" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=ProcessManager%5Bjcu%5Ename=ProcessManager.java%5Bjpack%5Ename=exactitude.core.application%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=Exactitude-core%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=IMetadataConverter%5Bjcu%5Ename=IMetadataConverter.java%5Bjpack%5Ename=exactitude.core.converter%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=Exactitude-core%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_O5vTsqZAEd-J6qh_PEcH1Q" points="[0, 0, -4485, -12899]$[4485, 3041, 0, -9858]$[4485, 12899, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_O_U-UqZAEd-J6qh_PEcH1Q" id="(0.66653854,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_O_VlYKZAEd-J6qh_PEcH1Q" id="(0.4996828,0.0)"/>
+  </edges>
+  <edges xmi:id="_O5xv8KZAEd-J6qh_PEcH1Q" source="_OykUtKZAEd-J6qh_PEcH1Q" target="_OyT2BKZAEd-J6qh_PEcH1Q">
+    <children xmi:id="_O5y-EKZAEd-J6qh_PEcH1Q" type="KindLabel">
+      <children xmi:id="_O5y-EqZAEd-J6qh_PEcH1Q" type="Stereotype"/>
+      <children xmi:id="_O5zlIaZAEd-J6qh_PEcH1Q" type="Kind"/>
+      <children xmi:id="_O5zlIKZAEd-J6qh_PEcH1Q" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_O5y-EaZAEd-J6qh_PEcH1Q" y="-188"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_O5xv8aZAEd-J6qh_PEcH1Q" fontName="Sans" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=ProcessManager%5Bjcu%5Ename=ProcessManager.java%5Bjpack%5Ename=exactitude.core.application%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=Exactitude-core%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=ConfigItemDescriptor%5Bjcu%5Ename=ConfigItemDescriptor.java%5Bjpack%5Ename=exactitude.core.Descriptors%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=Exactitude-core%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_O5xv8qZAEd-J6qh_PEcH1Q" points="[1, 0, 8510, -3041]$[-699, 1436, 7810, -1605]$[-8508, 3041, 1, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_O_NCgKZAEd-J6qh_PEcH1Q" id="(0.16660258,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_O_NCgaZAEd-J6qh_PEcH1Q" id="(0.8823075,0.0)"/>
+  </edges>
+  <edges xmi:id="_O50MMKZAEd-J6qh_PEcH1Q" source="_OykUtKZAEd-J6qh_PEcH1Q" target="_OyfcMKZAEd-J6qh_PEcH1Q">
+    <children xmi:id="_O51aUKZAEd-J6qh_PEcH1Q" type="KindLabel">
+      <children xmi:id="_O51aUqZAEd-J6qh_PEcH1Q" type="Stereotype"/>
+      <children xmi:id="_O52ocKZAEd-J6qh_PEcH1Q" type="Kind"/>
+      <children xmi:id="_O52BYKZAEd-J6qh_PEcH1Q" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_O51aUaZAEd-J6qh_PEcH1Q" y="-188"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_O50MMaZAEd-J6qh_PEcH1Q" fontName="Sans" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=ProcessManager%5Bjcu%5Ename=ProcessManager.java%5Bjpack%5Ename=exactitude.core.application%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=Exactitude-core%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=IConverter%5Bjcu%5Ename=IConverter.java%5Bjpack%5Ename=exactitude.core.converter%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=Exactitude-core%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_O50MMqZAEd-J6qh_PEcH1Q" points="[0, 0, 1, -3041]$[0, 3041, 1, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_O_OQoqZAEd-J6qh_PEcH1Q" id="(0.49993593,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_O_OQo6ZAEd-J6qh_PEcH1Q" id="(0.49993017,0.0)"/>
+  </edges>
+  <edges xmi:id="_O53PgKZAEd-J6qh_PEcH1Q" source="_OykUtKZAEd-J6qh_PEcH1Q" target="_OyNvYKZAEd-J6qh_PEcH1Q">
+    <children xmi:id="_O532kKZAEd-J6qh_PEcH1Q" type="KindLabel">
+      <children xmi:id="_O54doKZAEd-J6qh_PEcH1Q" type="Stereotype"/>
+      <children xmi:id="_O55EsKZAEd-J6qh_PEcH1Q" type="Kind"/>
+      <children xmi:id="_O54doaZAEd-J6qh_PEcH1Q" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_O532kaZAEd-J6qh_PEcH1Q" y="-188"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_O53PgaZAEd-J6qh_PEcH1Q" fontName="Sans" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=ProcessManager%5Bjcu%5Ename=ProcessManager.java%5Bjpack%5Ename=exactitude.core.application%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=Exactitude-core%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=IComparator%5Bjcu%5Ename=IComparator.java%5Bjpack%5Ename=exactitude.core.comparator%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=Exactitude-core%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_O53PgqZAEd-J6qh_PEcH1Q" points="[1, 0, -7354, -3041]$[7355, 3041, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_O_OQoKZAEd-J6qh_PEcH1Q" id="(0.83326924,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_O_OQoaZAEd-J6qh_PEcH1Q" id="(0.5,0.0)"/>
+  </edges>
+  <edges xmi:id="_O55rwKZAEd-J6qh_PEcH1Q" source="_OykUtKZAEd-J6qh_PEcH1Q" target="_OypNNKZAEd-J6qh_PEcH1Q">
+    <children xmi:id="_O56S0KZAEd-J6qh_PEcH1Q" type="KindLabel">
+      <children xmi:id="_O5654KZAEd-J6qh_PEcH1Q" type="Stereotype"/>
+      <children xmi:id="_O57g8aZAEd-J6qh_PEcH1Q" type="Kind"/>
+      <children xmi:id="_O57g8KZAEd-J6qh_PEcH1Q" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_O56S0aZAEd-J6qh_PEcH1Q" y="-188"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_O55rwaZAEd-J6qh_PEcH1Q" fontName="Sans" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=ProcessManager%5Bjcu%5Ename=ProcessManager.java%5Bjpack%5Ename=exactitude.core.application%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=Exactitude-core%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=LogUtil%5Bjcu%5Ename=LogUtil.java%5Bjpack%5Ename=exactitude.core.util%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=Exactitude-core%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_O55rwqZAEd-J6qh_PEcH1Q" points="[1, 0, 4346, -3041]$[-596, 1436, 3749, -1605]$[-4344, 3041, 1, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_O_NpkKZAEd-J6qh_PEcH1Q" id="(0.33320516,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_O_NpkaZAEd-J6qh_PEcH1Q" id="(0.87553877,0.0)"/>
+  </edges>
+  <edges xmi:id="_O58IAKZAEd-J6qh_PEcH1Q" source="_Oymw9KZAEd-J6qh_PEcH1Q" target="_OykUtKZAEd-J6qh_PEcH1Q">
+    <children xmi:id="_O59WIKZAEd-J6qh_PEcH1Q" type="KindLabel">
+      <children xmi:id="_O59WIqZAEd-J6qh_PEcH1Q" type="Stereotype"/>
+      <children xmi:id="_O599MaZAEd-J6qh_PEcH1Q" type="Kind"/>
+      <children xmi:id="_O599MKZAEd-J6qh_PEcH1Q" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_O59WIaZAEd-J6qh_PEcH1Q" y="-188"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_O58IAaZAEd-J6qh_PEcH1Q" fontName="Sans" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=ProcessManagerFactory%5Bjcu%5Ename=ProcessManagerFactory.java%5Bjpack%5Ename=exactitude.core.application%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=Exactitude-core%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=ProcessManager%5Bjcu%5Ename=ProcessManager.java%5Bjpack%5Ename=exactitude.core.application%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=Exactitude-core%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_O58IAqZAEd-J6qh_PEcH1Q" points="[1, 0, -5010, -1604]$[5012, 1604, 1, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_O_O3sqZAEd-J6qh_PEcH1Q" id="(0.94442385,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_O_PewKZAEd-J6qh_PEcH1Q" id="(0.03844675,0.0)"/>
+  </edges>
+  <edges xmi:id="_O5-kQKZAEd-J6qh_PEcH1Q" source="_Oymw9KZAEd-J6qh_PEcH1Q" target="_OypNNKZAEd-J6qh_PEcH1Q">
+    <children xmi:id="_O5_yYKZAEd-J6qh_PEcH1Q" type="KindLabel">
+      <children xmi:id="_O5_yYqZAEd-J6qh_PEcH1Q" type="Stereotype"/>
+      <children xmi:id="_O6AZcaZAEd-J6qh_PEcH1Q" type="Kind"/>
+      <children xmi:id="_O6AZcKZAEd-J6qh_PEcH1Q" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_O5_yYaZAEd-J6qh_PEcH1Q" y="-188"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_O5-kQaZAEd-J6qh_PEcH1Q" fontName="Sans" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=ProcessManagerFactory%5Bjcu%5Ename=ProcessManagerFactory.java%5Bjpack%5Ename=exactitude.core.application%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=Exactitude-core%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=LogUtil%5Bjcu%5Ename=LogUtil.java%5Bjpack%5Ename=exactitude.core.util%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=Exactitude-core%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_O5-kQqZAEd-J6qh_PEcH1Q" points="[1, 0, -1874, -8109]$[1, 6504, -1874, -1605]$[1876, 8109, 1, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_O_VlYaZAEd-J6qh_PEcH1Q" id="(0.8888477,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_O_VlYqZAEd-J6qh_PEcH1Q" id="(0.5008082,0.0)"/>
+  </edges>
+  <edges xmi:id="_O6BAgKZAEd-J6qh_PEcH1Q" source="_Oymw9KZAEd-J6qh_PEcH1Q" target="_OyT2BKZAEd-J6qh_PEcH1Q">
+    <children xmi:id="_O6COoKZAEd-J6qh_PEcH1Q" type="KindLabel">
+      <children xmi:id="_O6COoqZAEd-J6qh_PEcH1Q" type="Stereotype"/>
+      <children xmi:id="_O6C1saZAEd-J6qh_PEcH1Q" type="Kind"/>
+      <children xmi:id="_O6C1sKZAEd-J6qh_PEcH1Q" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_O6COoaZAEd-J6qh_PEcH1Q" y="-188"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_O6BAgaZAEd-J6qh_PEcH1Q" fontName="Sans" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=ProcessManagerFactory%5Bjcu%5Ename=ProcessManagerFactory.java%5Bjpack%5Ename=exactitude.core.application%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=Exactitude-core%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=ConfigItemDescriptor%5Bjcu%5Ename=ConfigItemDescriptor.java%5Bjpack%5Ename=exactitude.core.Descriptors%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=Exactitude-core%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_O6BAgqZAEd-J6qh_PEcH1Q" points="[1, 0, 1, -8109]$[1, 8109, 1, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_O_WMcKZAEd-J6qh_PEcH1Q" id="(0.3688403,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_O_WMcaZAEd-J6qh_PEcH1Q" id="(0.764808,0.0)"/>
+  </edges>
+  <edges xmi:id="_O6DcwKZAEd-J6qh_PEcH1Q" source="_Oymw9KZAEd-J6qh_PEcH1Q" target="_OyZ8oKZAEd-J6qh_PEcH1Q">
+    <children xmi:id="_O6Eq4KZAEd-J6qh_PEcH1Q" type="KindLabel">
+      <children xmi:id="_O6Eq4qZAEd-J6qh_PEcH1Q" type="Stereotype"/>
+      <children xmi:id="_O6FR8aZAEd-J6qh_PEcH1Q" type="Kind"/>
+      <children xmi:id="_O6FR8KZAEd-J6qh_PEcH1Q" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_O6Eq4aZAEd-J6qh_PEcH1Q" y="-188"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_O6DcwaZAEd-J6qh_PEcH1Q" fontName="Sans" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=ProcessManagerFactory%5Bjcu%5Ename=ProcessManagerFactory.java%5Bjpack%5Ename=exactitude.core.application%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=Exactitude-core%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=DescriptorParser%5Bjcu%5Ename=DescriptorParser.java%5Bjpack%5Ename=exactitude.core.Descriptors%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=Exactitude-core%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_O6DcwqZAEd-J6qh_PEcH1Q" points="[1, 0, 2206, -1604]$[-2204, 1604, 1, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_O_PewaZAEd-J6qh_PEcH1Q" id="(0.18432753,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_O_PewqZAEd-J6qh_PEcH1Q" id="(0.8293562,0.0)"/>
+  </edges>
+  <edges xmi:id="_O6F5AKZAEd-J6qh_PEcH1Q" source="_OypNNKZAEd-J6qh_PEcH1Q" target="_OyQLoqZAEd-J6qh_PEcH1Q">
+    <children xmi:id="_O6HHIKZAEd-J6qh_PEcH1Q" type="KindLabel">
+      <children xmi:id="_O6HHIqZAEd-J6qh_PEcH1Q" type="Stereotype"/>
+      <children xmi:id="_O6HuMaZAEd-J6qh_PEcH1Q" type="Kind"/>
+      <children xmi:id="_O6HuMKZAEd-J6qh_PEcH1Q" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_O6HHIaZAEd-J6qh_PEcH1Q" y="-188"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_O6F5AaZAEd-J6qh_PEcH1Q" fontName="Sans" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=LogUtil%5Bjcu%5Ename=LogUtil.java%5Bjpack%5Ename=exactitude.core.util%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=Exactitude-core%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=Constants%5Bjcu%5Ename=Constants.java%5Bjpack%5Ename=exactitude.core%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=Exactitude-core%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_O6F5AqZAEd-J6qh_PEcH1Q" points="[0, 0, 9314, -5915]$[-1330, 4310, 7984, -1605]$[-9313, 5915, 1, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_O_O3sKZAEd-J6qh_PEcH1Q" id="(0.5,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_O_O3saZAEd-J6qh_PEcH1Q" id="(0.7498779,0.0)"/>
+  </edges>
+  <edges xmi:id="_QQttsKZAEd-J6qh_PEcH1Q" source="_QMxo4KZAEd-J6qh_PEcH1Q" target="_OyWSQqZAEd-J6qh_PEcH1Q">
+    <children xmi:id="_QQuUwKZAEd-J6qh_PEcH1Q" type="KindLabel">
+      <children xmi:id="_QQu70KZAEd-J6qh_PEcH1Q" type="Stereotype"/>
+      <children xmi:id="_QQvi4KZAEd-J6qh_PEcH1Q" type="Kind"/>
+      <children xmi:id="_QQu70aZAEd-J6qh_PEcH1Q" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QQuUwaZAEd-J6qh_PEcH1Q" y="-188"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_QQttsaZAEd-J6qh_PEcH1Q" fontName="Sans" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=ExactitudeRun%5Bjcu%5Ename=ExactitudeRun.java%5Bjpack%5Ename=exactitude%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=Exactitude%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=Exactitude%5Bjcu%5Ename=Exactitude.java%5Bjpack%5Ename=exactitude.core%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=Exactitude-core%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_QQttsqZAEd-J6qh_PEcH1Q" points="[0, 0, 0, -1604]$[0, 1604, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hYtJYKZAEd-J6qh_PEcH1Q" id="(0.4998994,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hYu-kKZAEd-J6qh_PEcH1Q" id="(0.5,0.0)"/>
+  </edges>
+</notation:Diagram>
