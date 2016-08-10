@@ -1,5 +1,5 @@
 # Exactitude - Converter and Conversion comparisons
-![Exactitude image of an eye](Exactitude.jpg)
+![Exactitude image of an eye](/Exactitude.jpg)
 This project is used to convert files from one format to another, and to provide a measurement of the quality of the output. This uses the concept of [perceptual hashing](https://en.wikipedia.org/wiki/Perceptual_hashing "Wikipedia article") to create a human-like visual comparison of the original and source files.
 
 ## Dependencies
