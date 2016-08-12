@@ -7,6 +7,12 @@ This project is used to convert files from one format to another, and to provide
 
 ## Dependencies
 Exactitude depends on a number of external software packages which are all automatically created by the build scripts:
-* The perceptual hashing library [pHash](http://www.phash.org/)
-* others?
+* Perceptual hashing library [pHash](http://www.phash.org/)
+* Java Advanced Imaging library [jai](http://www.oracle.com/technetwork/articles/javaee/jai-142803.html)
+* Independent JPEG Group library [jpegsrc](http://www.ijg.org/)
+* Audio and video streaming library [ffmpeg](https://ffmpeg.org/)
+* Audio file read/write library [libsndfile](http://www.mega-nerd.com/libsndfile/)
+* Audio sample rate converter library [libsamplerate](http://www.mega-nerd.com/SRC/) 
+* MPEG audio decoder [mpg123](https://www.mpg123.de/)
+* Image processing library [CImg](http://cimg.eu/)
 
