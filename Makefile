@@ -16,9 +16,9 @@ MPG123_VERSION		=	1.23.6
 PHASH_VERSION		=	0.9.6
 
 # Commands
-UNZIP	=	"jar -xf"
-COPY	=	"cp"
-COPYALL	=	"cp -R"
+UNZIP	=	jar -xf
+COPY	=	cp
+COPYALL	=	cp -R
 
 ##############################################################################
 # Where should stuff go?
@@ -56,7 +56,7 @@ CONFIGFLAGSA	=	"--bindir=$(BINDIR) --datadir=$(LIBDIR) --libdir=$(LIBDIR) --shli
 
 # Create any required directories
 dirs :
-	mkdir -p $(ARCHIVEDIR) $(SRCDIR) $(DOCDIR)/jai $(DOCDIR)/CImg $(LIBDIR) $(INCDIR) $(BINDIR)
+	mkdir -p $(ARCHIVEDIR) $(SRCDIR) $(LIBDIR) $(INCDIR) $(BINDIR)
 
 
 # JAI library
@@ -106,7 +106,7 @@ archives : dirs $(ARCHIVEDIR)/jai-$(JAI_VERSION)-lib-$(PLATFORMOS)-$(PLATFORMVER
 
 # Extract the archives
 extract: archives
-	cd $(SRCDIR) && $(UNZIP) $(ARCHIVEDIR)/CImg-$(CIMG_VERSION).zip
+	cd $(SRCDIR) && $(UNZIP) $(ARCHIVEDIR)/CImg_latest.zip
 	cd $(SRCDIR) && tar xzf $(ARCHIVEDIR)/jpegsrc.v$(JPEGSRC_VERSION).tar.gz
 	cd $(SRCDIR) && tar xzf $(ARCHIVEDIR)/ffmpeg-$(FFMPEG_VERSION).tar.gz
 	cd $(SRCDIR) && tar xzf $(ARCHIVEDIR)/libsndfile-$(LIBSNDFILE_VERSION).tar.gz
@@ -120,32 +120,27 @@ jpegsrc: extract
 	cd $(SRCDIR)/jpeg-$(JPEGSRC_VERSION) \
 	&& ./configure CFLAGS='-O2' $(CONFIGFLAGS) \
 	&& make \
-	&& make test \
-	&& make install
+	&& make test
 
 ffmpeg: extract
 	cd $(SRCDIR)/ffmpeg-$(FFMPEG_VERSION) \
-	&& ./configure --prefix=$(PREFIX) --enable-shared --enable-swscale --enable-pthreads $(CONFIGFLAGSA)
+	&& ./configure --prefix=$(PREFIX) --enable-shared --enable-swscale --enable-pthreads $(CONFIGFLAGSA) \
 	&& make
-	&& make install
 
 libsndfile: extract
 	cd $(SRCDIR)/libsndfile-$(LIBSNDFILE_VERSION)
 	&& ./configure $(CONFIGFLAGS) --prefix=$(PREFIX) \
-	&& make \
-	&& make install
+	&& make
 
 libsamplerate: extract
 	cd $(SRCDIR)/libsamplerate-$(LIBSAMPLERATE_VERSION) \
 	&& ./configure $(CONFIGFLAGS) --prefix=$(PREFIX) \
-	&& make \
-	&& make install
+	&& make
 
 mpg123: extract
 	cd $(SRCDIR)/mpg123-$(MPG123_VERSION) \
 	&& ./configure $(CONFIGFLAGS) --prefix=$(PREFIX) --exec-prefix=$(PREFIX) \
-	&& make \
-	&& make install
+	&& make
 
 pHash: jpegsrc ffmpeg libsndfile libsamplerate mpg123
 	cd ${SRCDIR}/pHash-${PHASH_VERSION} \
@@ -160,11 +155,15 @@ pHash: jpegsrc ffmpeg libsndfile libsamplerate mpg123
 	&& mkdir -p bin \
 	&& javac -d bin org/phash/*.java \
 	&& cd bin \
-	&& jar -cf ${LIBDIR}/pHash-${PHASH_VERSION}.jar * \
-	&& cd ${SRCDIR}/pHash-${PHASH_VERSION} \
-	&& make install
+	&& jar -cf ${LIBDIR}/pHash-${PHASH_VERSION}.jar *
 
 
-all: pHash
+install: pHash
+	cd $(SRCDIR)/jpeg-$(JPEGSRC_VERSION) && make install
+	cd $(SRCDIR)/ffmpeg-$(FFMPEG_VERSION) && make install
+	cd $(SRCDIR)/libsndfile-$(LIBSNDFILE_VERSION) && make install
+	cd $(SRCDIR)/libsamplerate-$(LIBSAMPLERATE_VERSION) && make install
+	cd $(SRCDIR)/mpg123-$(MPG123_VERSION) && make install
+	cd ${SRCDIR}/pHash-${PHASH_VERSION} && make install
 
 
